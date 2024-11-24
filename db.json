@@ -1,0 +1,338 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "username": "johndoe",
+      "password": "password123",
+      "address": "123 Main St, New York, NY",
+      "projects": [
+        1,
+        2,
+        "1cd1",
+        "48ab",
+        "5d53"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "username": "janesmith",
+      "password": "password123",
+      "address": "456 Oak Ave, Los Angeles, CA",
+      "projects": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "email": "michael.johnson@example.com",
+      "username": "michaelj",
+      "password": "password123",
+      "address": "789 Elm St, Chicago, IL",
+      "projects": [
+        6
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "username": "emilyd",
+      "password": "password123",
+      "address": "101 Maple Dr, Austin, TX",
+      "projects": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "5",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "username": "davidw",
+      "password": "password123",
+      "address": "321 Pine St, Miami, FL",
+      "projects": [
+        9,
+        10
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project Alpha",
+      "description": "Initial phase of the company website redesign.",
+      "clientId": 1,
+      "totalPrice": 10000,
+      "subtotal": 10000,
+      "financialRecords": [
+        {
+          "date": "2024-01-10",
+          "description": "Initial payment",
+          "received": 3000
+        },
+        {
+          "date": "2024-02-15",
+          "description": "Second payment",
+          "received": 2500
+        },
+        {
+          "date": "2024-03-20",
+          "description": "Final payment",
+          "received": 2000
+        },
+        {
+          "date": "2024-11-05",
+          "description": "nothing",
+          "received": 2500
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Project Beta",
+      "description": "Development of a mobile application for e-commerce.",
+      "clientId": 1,
+      "totalPrice": 20000,
+      "subtotal": 20000,
+      "financialRecords": [
+        {
+          "date": "2024-03-01",
+          "description": "First payment",
+          "received": 7000
+        },
+        {
+          "date": "2024-04-10",
+          "description": "Second payment",
+          "received": 5000
+        },
+        {
+          "date": "2024-11-05",
+          "description": "nothing",
+          "received": 5000
+        },
+        {
+          "date": "2024-11-06",
+          "description": "njnn",
+          "received": 3000
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Project Gamma",
+      "description": "Database optimization for cloud services.",
+      "clientId": 2,
+      "totalPrice": 15000,
+      "subtotal": 11000,
+      "financialRecords": [
+        {
+          "date": "2024-01-20",
+          "description": "Initial payment",
+          "received": 5000
+        },
+        {
+          "date": "2024-03-15",
+          "description": "Second payment",
+          "received": 6000
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Project Delta",
+      "description": "Server migration to AWS infrastructure.",
+      "clientId": 2,
+      "totalPrice": 30000,
+      "subtotal": 21000,
+      "financialRecords": [
+        {
+          "date": "2024-02-25",
+          "description": "First payment",
+          "received": 10000
+        },
+        {
+          "date": "2024-04-05",
+          "description": "Second payment",
+          "received": 8000
+        },
+        {
+          "date": "2024-05-15",
+          "description": "Final payment",
+          "received": 3000
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Project Epsilon",
+      "description": "Design and development of a marketing automation platform.",
+      "clientId": 2,
+      "totalPrice": 25000,
+      "subtotal": 20000,
+      "financialRecords": [
+        {
+          "date": "2024-01-30",
+          "description": "Initial payment",
+          "received": 9000
+        },
+        {
+          "date": "2024-03-18",
+          "description": "Second payment",
+          "received": 6000
+        },
+        {
+          "date": "2024-04-25",
+          "description": "Third payment",
+          "received": 5000
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Project Zeta",
+      "description": "AI model training for predictive analytics.",
+      "clientId": 3,
+      "totalPrice": 40000,
+      "subtotal": 35000,
+      "financialRecords": [
+        {
+          "date": "2024-03-10",
+          "description": "Initial payment",
+          "received": 15000
+        },
+        {
+          "date": "2024-04-20",
+          "description": "Second payment",
+          "received": 10000
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Project Eta",
+      "description": "Mobile app development for ride-sharing platform.",
+      "clientId": 4,
+      "totalPrice": 35000,
+      "subtotal": 28000,
+      "financialRecords": [
+        {
+          "date": "2024-02-05",
+          "description": "Initial payment",
+          "received": 10000
+        },
+        {
+          "date": "2024-04-01",
+          "description": "Second payment",
+          "received": 9000
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Project Theta",
+      "description": "Cybersecurity audit and implementation.",
+      "clientId": 4,
+      "totalPrice": 20000,
+      "subtotal": 18000,
+      "financialRecords": [
+        {
+          "date": "2024-03-12",
+          "description": "First payment",
+          "received": 6000
+        },
+        {
+          "date": "2024-05-10",
+          "description": "Second payment",
+          "received": 8000
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Project Iota",
+      "description": "Redesign of e-commerce platform.",
+      "clientId": 5,
+      "totalPrice": 45000,
+      "subtotal": 30000,
+      "financialRecords": [
+        {
+          "date": "2024-01-15",
+          "description": "Initial payment",
+          "received": 15000
+        },
+        {
+          "date": "2024-03-25",
+          "description": "Second payment",
+          "received": 10000
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Project Kappa",
+      "description": "Logistics tracking system development.",
+      "clientId": 5,
+      "totalPrice": 50000,
+      "subtotal": 35000,
+      "financialRecords": [
+        {
+          "date": "2024-02-20",
+          "description": "First payment",
+          "received": 20000
+        },
+        {
+          "date": "2024-04-15",
+          "description": "Second payment",
+          "received": 10000
+        }
+      ]
+    },
+    {
+      "id": "1cd1",
+      "name": "Web application",
+      "description": "new web application\n",
+      "clientId": "1",
+      "totalPrice": 0,
+      "subtotal": 0,
+      "financialRecords": []
+    },
+    {
+      "id": "48ab",
+      "name": "CrickBuzz",
+      "description": "cricket live score",
+      "clientId": "1",
+      "totalPrice": "3000",
+      "subtotal": 1000,
+      "financialRecords": [
+        {
+          "date": "2024-11-05",
+          "description": "first payment",
+          "received": 1000
+        }
+      ]
+    },
+    {
+      "id": "5d53",
+      "name": "rafusaas",
+      "description": "saas",
+      "clientId": "1",
+      "totalPrice": "100000",
+      "subtotal": 9000,
+      "financialRecords": [
+        {
+          "date": "2024-11-05",
+          "description": "nothing",
+          "received": 9000
+        }
+      ]
+    }
+  ]
+}

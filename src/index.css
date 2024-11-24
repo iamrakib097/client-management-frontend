@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .menu-bar .ant-menu-item-selected {
+    background-color: #f15a29 !important;
+    color: white !important;
+  }
+}

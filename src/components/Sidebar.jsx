@@ -13,7 +13,6 @@ import {
 const Sidebar = ({ collapsed, onLogout }) => {
   const location = useLocation();
 
-  // Define menu items with route paths as keys
   const menuItems = [
     {
       key: "/",
@@ -46,16 +45,18 @@ const Sidebar = ({ collapsed, onLogout }) => {
   return (
     <>
       <Flex align="center" justify="center">
-        <img
-          src="https://rafusoft.com/assets/img/rafusoft-logo.svg"
-          alt="Rafusoft Logo"
-          width={130}
-          className="m-[28px]"
-        />
+        <Link to="/dashboard">
+          <img
+            src="https://rafusoft.com/assets/img/rafusoft-logo.svg"
+            alt="Rafusoft Logo"
+            width={130}
+            className="m-[28px]"
+          />
+        </Link>
       </Flex>
       <Menu
         mode="inline"
-        selectedKeys={[location.pathname]} // Highlight based on current route
+        selectedKeys={[location.pathname]}
         className="menu-bar"
         items={menuItems}
       />

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Row, Col, Image } from "antd";
-import axios from "axios";
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
@@ -26,6 +25,7 @@ const Login = ({ onLogin }) => {
               src="https://rafusoft.com/assets/img/rafusoft-logo.svg"
               alt="Rafusoft Logo"
               width={180}
+              preview={false}
             />
           </div>
 

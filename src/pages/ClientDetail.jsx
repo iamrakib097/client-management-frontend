@@ -43,9 +43,12 @@ const fetchAllCurrency = async () => {
 const createProject = async (projectData) => {
   try {
     const response = await api.post("/project/", projectData);
-    return response.data; 
+    return response.data;
   } catch (error) {
-    console.error("Error creating project:", error.response ? error.response.data : error.message);
+    console.error(
+      "Error creating project:",
+      error.response ? error.response.data : error.message
+    );
     throw new Error("Failed to create project");
   }
 };
@@ -55,7 +58,10 @@ const updateClient = async (id, updatedClient) => {
     const response = await api.put(`/client/${id}`, updatedClient);
     return response.data;
   } catch (error) {
-    console.error("Error updating client:", error.response ? error.response.data : error.message);
+    console.error(
+      "Error updating client:",
+      error.response ? error.response.data : error.message
+    );
     throw new Error("Failed to update client");
   }
 };
@@ -103,11 +109,14 @@ const ClientDetail = () => {
         const response = await api.get("/client-settings/");
         setClientStatusOptions(response.data); // Update status options
       } catch (error) {
-        console.error("Error fetching client status options:", error.response ? error.response.data : error.message);
+        console.error(
+          "Error fetching client status options:",
+          error.response ? error.response.data : error.message
+        );
         message.error("Failed to load client status options.");
       }
     };
-  
+
     fetchClientStatusOptions();
   }, []);
 
@@ -117,11 +126,14 @@ const ClientDetail = () => {
         const response = await api.get("/project-settings/");
         setProjectTypeOption(response.data);
       } catch (error) {
-        console.error("Error fetching project type options:", error.response ? error.response.data : error.message);
+        console.error(
+          "Error fetching project type options:",
+          error.response ? error.response.data : error.message
+        );
         message.error("Failed to load project type options.");
       }
     };
-  
+
     fetchProjectType();
   }, []);
 
@@ -282,8 +294,8 @@ const ClientDetail = () => {
                 }
                 description={
                   project.details.length > 100
-                    ? `${project.details.substring(0, 70)}...`
-                    : project.details
+                    ? `Project Details: ${project.details.substring(0, 70)}...`
+                    : `Project Details: ${project.details}`
                 }
               />
               <Link to={`/projects/${project.id}`}>
